@@ -14,7 +14,9 @@ export default function Marquee() {
         <div className="flex gap-[40px] text-accent font-black text-2xl items-center">
           {items.map((i, ind) => (
             <>
-              { ind !== 0 && ind !== items.length - 1 && <span className="w-2 h-2 rounded-full bg-accent-light"></span>}
+              {ind !== 0 && ind !== items.length - 1 && (
+                <span className="w-2 h-2 rounded-full bg-accent-light"></span>
+              )}
               <span>{i}</span>
             </>
           ))}
@@ -25,7 +27,7 @@ export default function Marquee() {
 }
 
 const MarqueeMover = ({ children }: { children: React.ReactNode }) => (
-  <marquee behavior="" direction="">
-    {children}
-  </marquee>
+  <div className="marquee">
+    <span> {children}</span>
+  </div>
 );

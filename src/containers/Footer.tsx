@@ -1,4 +1,3 @@
-import React from "react";
 import { FaInstagram, FaMeta, FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
