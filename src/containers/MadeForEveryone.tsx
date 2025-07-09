@@ -9,7 +9,7 @@ export default function MadeForEveryone() {
           <img className="w-[55px]" src="/bannerstrip.png" alt="" />
         </div>
         <div className="RIGHT w-1/2 max-md:w-auto flex justify-end p-10 flex-col gap-[20px]">
-          <h2 className=" font-black font-theme text-accent text-6xl ">
+          <h2 className=" font-black font-theme text-accent text-6xl max-md:text-4xl">
             MADE TO PLUMP, <br />
             MADE FOR
             <br />

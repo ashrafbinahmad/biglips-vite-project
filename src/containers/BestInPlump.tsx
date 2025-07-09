@@ -58,7 +58,7 @@ export default function BestInPlump() {
   ];
   return (
     <section>
-      <div className="p-10">
+      <div className="p-10 max-md:p-5">
         <div className="flex justify-between  flex-wrap gap-3">
           <h2 className="font-black font-theme text-accent text-6xl">
             BEST IN PLUMP
@@ -68,8 +68,8 @@ export default function BestInPlump() {
           </span>
         </div>
       </div>
-      <div className="pl-10 max-md:px-10 flex gap-5 max-md:flex-col">
-        <div className="md:w-[300px]  h-[600px] relative rounded-4xl overflow-hidden group shrink-0">
+      <div className="pl-10 max-md:px-5 max-md:pl-0 flex gap-5 max-md:flex-col">
+        <div className="md:w-[300px] max-md:ml-5  h-[600px] relative rounded-4xl overflow-hidden group shrink-0">
           <img
             className="w-full h-full object-cover -z-10 group-hover:scale-110 transition-all "
             src="/shopall.png"
@@ -83,13 +83,13 @@ export default function BestInPlump() {
         </div>
         {/* SCROLLABLE SHOP ITEMS */}
         <Swiper
-          spaceBetween={20}
+          spaceBetween={0}
           slidesPerView={4.1}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           height={600}
           breakpoints={{
-            0: { slidesPerView: 1, width: 500 },
+            0: { slidesPerView: 1, width: 300 },
             480: { slidesPerView: 1.5, width: 500 },
             640: { slidesPerView: 2.2, width: 500 },
             768: { slidesPerView: 3 },
@@ -98,7 +98,7 @@ export default function BestInPlump() {
         >
           {items.map((item) => (
             <SwiperSlide>
-              <div className="grid h-[600px]">
+              <div className="grid h-[600px] max-w-[80vw] ml-5">
                 <div className=" border bg-white border-accent rounded-3xl overflow-hidden">
                   <img src={item.image} alt="" />
                 </div>

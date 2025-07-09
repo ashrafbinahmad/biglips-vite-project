@@ -17,7 +17,7 @@ export default function ShopProductCategories() {
     <section>
       <div className="container px-5 py-10 flex gap-[40px] m-auto max-md:flex-col">
         {items.map((item) => (
-          <div key={item.name} className="relative overflow-hidden h-[650px] w-[200px] max-md:w-full grow rounded-4xl p-5 px-7 bg-black -z-10">
+          <div key={item.name} className="relative overflow-hidden h-[650px] max-md:max-h-[200px] max-md:gap-2 w-[200px] max-md:w-full grow rounded-4xl p-5 px-7 bg-black -z-10">
             <div className="text-white  font-bold">
                 <p className="text-2xl font-[500] opacity-80">SHOP</p>
                 <p className="text-5xl font-black">{item.name}</p>

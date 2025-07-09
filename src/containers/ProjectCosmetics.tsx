@@ -17,7 +17,7 @@ export default function ProjectCosmetics() {
     <section>
       <div className=" py-[5rem] max-w-[1700px] m-auto">
         <div className="p-10 flex justify-between items-center py-5 flex-wrap gap-3">
-          <h2 className=" font-black font-theme text-accent text-4xl ">
+          <h2 className=" font-black font-theme text-accent text-4xl max-md:text-2xl">
             @PROJECT_COSMETICS
           </h2>
           <button className="hover:bg-accent  cursor-pointer px-10 py-1 hover:text-white transition-all border-[1.5px] border-accent-light rounded-4xl flex font-theme font-black text-lg text-accent">

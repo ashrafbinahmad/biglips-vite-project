@@ -12,7 +12,7 @@ import ShopProductCategories from "./containers/ShopProductCategories";
 
 function App() {
   return (
-    <main className="">
+    <main className="max-md:w-screen overflow-x-hidden">
       <Header />
       <ShopProductCategories />
       <Marquee />
